@@ -1,0 +1,56 @@
+.concept{
+    background:linear-gradient(180deg,$smog 0%,$smog 40%,#A1938689 40%,#A1938689 100%)    
+}
+
+.concept .title {
+    padding-top: 10%;
+}
+
+.concept-img {
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    &_1 {
+        width: 64%;
+        @include sp {
+            width: 49%;
+        }
+    }
+    &_2 {
+        width: 35%;
+        @include sp {
+            width: 49%;
+        }
+    }
+}
+
+.concept-box {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 75%;
+    margin: 0 auto;
+    @include tab {
+    flex-direction: column;
+    width: 85%;
+    }
+    &-catch {
+        font-size: 4rem;
+        width: 50%;
+        text-align: center;
+        margin-top: 7rem;
+        @include tab {
+            font-size: 2rem;
+            margin-top: 5rem;
+            width: 100%;
+        }
+    }
+    &-text {
+        width: 50%;
+        margin: 7rem 0;
+        @include tab {
+            margin: 2rem 0 7rem;
+            width: 100%;
+        }
+    }
+}

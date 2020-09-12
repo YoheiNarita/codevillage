@@ -1,0 +1,40 @@
+.menu {
+    margin:250px 0 70px;
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    @include tab {
+        flex-direction: column;
+    }
+}
+
+.menu-item {
+    width: 25%;
+    min-width: 250px;
+    text-align: center;
+    @include tab {
+        width: 100%;
+    }
+    &-img {
+        margin-bottom:35px;
+        & img {
+            width: 100%;
+        }
+    }
+    &-text {
+        margin:0 20px ;
+    }
+    &-title {
+        margin-bottom:35px;
+        font-size: 3rem;
+    }
+    &-desc {
+        text-align: left;
+        margin-bottom:35px;
+    }
+    &-price {
+        text-align: right;
+    }
+}

@@ -1,0 +1,41 @@
+.first-v {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tab {
+        height: 100vh;
+        background-image: url(../img/bg1.png);
+        background-size: cover;
+        color: #fff;
+    }
+    &-wrap {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        @include tab {
+            width: 100%;
+        }
+    }
+    &:after {
+        @include tab {
+            display: none;
+        }
+        display: inline-block;
+        content: "";
+        width: 55%;
+        height: 100vh;
+        background-image: url(../img/bg1.png);
+        background-size: cover;
+    }
+}
+
+.catch-ja {
+    font-size: 3.8rem;
+}
+    
+.catch-en {
+    font-size: 3.8rem;
+    margin-top: 1.4em;
+}
